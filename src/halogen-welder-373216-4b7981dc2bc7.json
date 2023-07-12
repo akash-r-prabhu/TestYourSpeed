@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "halogen-welder-373216",
+  "private_key_id": "4b7981dc2bc7ff08910b1b8a9ca5b30a287352d7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDH/G/IUYe78LFe\nAXaqAQQn+5maTC+Aq/HbGfM+3Be3+ZTJQVCrWw5aKNQT8N0S9BZrxBFJwa6c2tDo\npqRK3uZps2W+IB6qCPRGmg7G3PKkE9ZbMXTCUtVb1h/90U9k3WJ6TKLtxXs/fMaU\nYxfqkc7YpAJs0RxOkx+IU1cdxzNgnlgQIxkVGQkU13gMppCZ/RBY/M8sYIF0XHV/\n5jIdTkTMW9XiFXdK/cRIsO6JPGEXNjzXpQV92eoMcc1fO4cVaQqOkntK+GO+sZJy\nkNQ1FtVXsZQCsqH7s5ez65dE/QbtspM+hWF56yrdNaFywpoTvKMN9sQKJNhAzm+L\nhiMcthUnAgMBAAECggEAIiSqHQQ2bVLhpVAQp2O3BvCAwAQj1A8HIsYibmf7MLDO\nwzGAiVDpeWEhHCpyRAsiTNHTtcj4e9Ur95yDzjiSFBfJ1hT7x0HyGp+wyCju0C6G\n2VjvO0ITJTPAkIAM0watCn5NDtU5fpRZ/vmQGr88Fmah91wYPh4GMysvY2kgD22L\n1IIGvc0DpDWGCNZhCtvK7ZePQw6XZyxqhpNbUwUV2qmWBCEhv9ZkyWpFr2T8fS+O\nLcPSxaGvcrvJJYfF6YkU8b2vojLG/i2RDTEd+2wK7NIsa+fhGXff2rU4ucUlOl3M\njmsirbRr8pej04Gnc2xr83jJV3NKzmjBLDexuP3PQQKBgQD0R96vKRw8XqM2QOmb\nmt5IfeKxraGSynTT+JyffH3HMx1jKHYVNg723J6kZyC/4jVlhDApU0eTXAY4XzrN\nHEtHMnxAE+bSNARbr6+5GwVRSRQt4Fb4HUWsdrTqsWgidrROs2UJSrD7eQ/O4yzE\n4hsJJQGfDd6kwPWXfgxBoeUehwKBgQDRlJAGcfniQlxh3WRHRCbcsL2dxFlWFb2V\nypoWoos8pi8I3hy4bh1Bs2LHG/vUaF3z6w6HtQ0tbXgZlIQo4uxVCcwdnI2eDtED\n58fAU3kJxMeypE6w0PoMlZKpwzJxBoQ070Esq83zGmSvpKtXMa4P4TUY5kuYSnqc\nxa7TWOtcYQKBgQDcvwGdugG5EDBfO6OfKQEL8y5jL6udsfSHBNfMS7yBwVAiJhMn\nMdWuAUoe+M6gd7OXDDBVd9trb7JzSKMjbRkduqKLaTCh7b2ueQHLvX49qVNh7aPJ\nzPIEWrU8jJq04h4oLHb2QZfTd9/wLlxrgoO57MYdTHRQ38pPXumGed1JiwKBgQCp\nH6/R46v40ABo4RWJBRAvS1jYtZg6BbVF6YbK+URPHvQZvdODaSim2jG953EjCU24\nBlllXc9Sd2JRki3MKML6JLvYsXr+r4owEpx5MWMdZPSZzknKGfmOqiz+XYyY9N8/\nMEtx1vqNUSErNEEoTeje26fTfhRGwuOLG2NnHfxgQQKBgDmOamMTiRD8rD0ZvKGh\nEeUn1pnq4pIfTN1O4fDrn9HYYWfbqyKy1F8UOcK+Q4wvdn/sJsuIBHqHbpoB69FK\nqSSIeEOoDBcp2U+V/rPj35j00w52AAlAQTm/Xg1d437RYaEOcc048/P9z0fVZzP2\nZ3Lp/Gf4t32TSnwn6rZzyBeS\n-----END PRIVATE KEY-----\n",
+  "client_email": "service-account@halogen-welder-373216.iam.gserviceaccount.com",
+  "client_id": "108742560169880907118",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/service-account%40halogen-welder-373216.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

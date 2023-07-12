@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+// import react router navigate button
+import { redirect } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container">
+        <h1>Direction Game Instructions</h1>
+        {/* table with color and direction as columns */}
+        {/* red is right, white is straight, green is left */}
+        <table>
+          <thead>
+            <tr>
+              <th>Color</th>
+              <th>Direction</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Red</td>
+              <td>Right</td>
+            </tr>
+            <tr>
+              <td>White</td>
+              <td>Straight</td>
+            </tr>
+            <tr>
+              <td>Green</td>
+              <td>Left</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <ul>
+          <li>Click the corresponding direction according to the color</li>
+          <li>For each correct answer, you will get a point</li>
+          <li>Game will end after 30 seconds</li>
+        </ul>
+
+        <button>
+          <a href="/game">Start Game</a>
+        </button>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
