@@ -84,3 +84,7 @@ h1 {
 #screen {
   transition: background-color 0.5s ease;
 }
+
+.arrowInScreen {
+  color: black;
+}

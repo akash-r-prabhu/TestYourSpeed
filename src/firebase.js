@@ -6,18 +6,16 @@ import "firebase/compat/firestore";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBuI4OqPipVbIhiDMflFMyq7dKEFGLQ6cA",
-    authDomain: "navigdata-e7716.firebaseapp.com",
-    projectId: "navigdata-e7716",
-    storageBucket: "navigdata-e7716.appspot.com",
-    messagingSenderId: "589120091159",
-    appId: "1:589120091159:web:61a22bc2f14ba0dad0d852"
-  };
-  
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: "AIzaSyBuI4OqPipVbIhiDMflFMyq7dKEFGLQ6cA",
+  projectId: "navigdata-e7716",
+  storageBucket: "navigdata-e7716.appspot.com",
+  messagingSenderId: "589120091159",
+  appId: "1:589120091159:web:61a22bc2f14ba0dad0d852",
+};
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
-
 
 export const serverStamp = firebase.firestore.Timestamp;
 export default db;

@@ -4,6 +4,7 @@ import db from "./firebase";
 
 const colors = ["red", "green", "white"];
 const directions = ["right", "left", "straight"];
+const directionArrow = ["→", "←", "↑"];
 const Game = () => {
   const [backgroundColor, setBackgroundColor] = useState("white");
   const [jsonData, setJsonData] = useState([]);
@@ -17,11 +18,13 @@ const Game = () => {
   const [timeLeft, setTimeLeft] = useState(30);
   const [startTime, setStartTime] = useState(0);
   const [averageTime, setAverageTime] = useState(0);
+  const [arrowChange, setArrowChange] = useState("");
   useEffect(() => {
     const interval = setInterval(() => {
       // if not gameover
       if (!gameEnded) {
         const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        setArrowChange(directionArrow[colors.indexOf(randomColor)]);
         setBackgroundColor(randomColor);
         setTotal((prev) => prev + 1);
         setStartTime(new Date().getTime());
@@ -50,6 +53,7 @@ const Game = () => {
     setAnswerResult(input.correct ? "Correct" : "Wrong");
     if (!gameEnded) {
       const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      setArrowChange(directionArrow[colors.indexOf(randomColor)]);
       setBackgroundColor(randomColor);
       setTotal((prev) => prev + 1);
       setStartTime(new Date().getTime());
@@ -72,6 +76,7 @@ const Game = () => {
   useEffect(() => {
     if (correct > 0 || wrong > 0) {
       db.collection("data").add({
+        timestamp: new Date().getTime(),
         correct: correct,
         wrong: wrong,
         averageTime: timeArray.reduce((a, b) => a + b, 0) / timeArray.length,
@@ -97,7 +102,10 @@ const Game = () => {
               {timeArray.reduce((a, b) => a + b, 0) / timeArray.length} ms
             </h3>
           </p>
-          <button onClick={() => window.location.reload()}>Play Again</button>
+          {/* level2 */}
+          <button>
+            <a href="/game2">Level 2</a>
+          </button>
         </div>
       ) : (
         <>
@@ -105,21 +113,21 @@ const Game = () => {
             <div
               className="arrow"
               onClick={() => handleDirectionClick("left")}
-              style={{ color: backgroundColor === "red" ? "white" : "black" }}
+              // style={{ color: backgroundColor === "red" ? "white" : "black" }}
             >
               &#8592;
             </div>
             <div
               className="arrow"
               onClick={() => handleDirectionClick("straight")}
-              style={{ color: backgroundColor === "green" ? "white" : "black" }}
+              // style={{ color: backgroundColor === "green" ? "white" : "black" }}
             >
               &#8593;
             </div>
             <div
               className="arrow"
               onClick={() => handleDirectionClick("right")}
-              style={{ color: backgroundColor === "white" ? "black" : "white" }}
+              // style={{ color: backgroundColor === "white" ? "black" : "white" }}
             >
               &#8594;
             </div>
@@ -132,7 +140,19 @@ const Game = () => {
               color: answerResult === "Correct" ? "green" : "red",
             }}
           >
-            {answerResult}
+            {/* if (arrowChange === "left") {
+                &#8592;
+              } */}
+            {/* {arrowChange === "green" && (
+              <div className="arrowInScreen">&#8592; </div>
+            )}
+            {arrowChange === "white" && (
+              <div className="arrowInScreen">&#8593;</div>
+            )}
+            {arrowChange === "red" && (
+              
+            )} */}
+            <div className="arrowInScreen">{arrowChange}</div>
           </div>
         </>
       )}

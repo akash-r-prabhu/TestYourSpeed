@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import Game from "./Game";
+import Game2 from "./Game2";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -13,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "/game",
     element: <Game />,
+  },
+  {
+    path: "/game2",
+    element: <Game2 />,
   },
 ]);
 
