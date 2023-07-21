@@ -103,8 +103,8 @@ const Game2 = () => {
               {timeArray.reduce((a, b) => a + b, 0) / timeArray.length} ms
             </h3>
           </p>
-          <button>
-            <a href="/game">Play again</a>
+          <button onClick={() => window.location.href="/game"}>
+         Play again
           </button>
           <p>
             Please share your feedback <a href="/feedback">here </a>

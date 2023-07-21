@@ -103,8 +103,8 @@ const Game = () => {
             </h3>
           </p>
           {/* level2 */}
-          <button>
-            <a href="/game2">Level 2</a>
+          <button onClick={() => window.location.href="/game2"}>
+            Level 2
           </button>
 
           <p>

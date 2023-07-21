@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 // import react router navigate button
 import { redirect } from "react-router-dom";
+import "./Game.css";
 
 const App = () => {
+ 
   return (
     <>
       <div className="container">
@@ -38,9 +40,7 @@ const App = () => {
           <li>Game will end after 30 seconds</li>
         </ul>
 
-        <button>
-          <a href="/game">Start Game</a>
-        </button>
+        <button onClick={() => window.location.href = "/game"}>Start game</button>
       </div>
     </>
   );

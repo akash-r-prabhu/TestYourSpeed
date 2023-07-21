@@ -88,3 +88,10 @@ h1 {
 .arrowInScreen {
   color: black;
 }
+
+ button{
+  width: 6rem;
+  height: 6rem;
+  background-color: rgb(101, 101, 198);
+  color: antiquewhite;
+}
