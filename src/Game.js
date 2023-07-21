@@ -106,6 +106,10 @@ const Game = () => {
           <button>
             <a href="/game2">Level 2</a>
           </button>
+
+          <p>
+            Please share your feedback <a href="/feedback">here </a>
+          </p>
         </div>
       ) : (
         <>

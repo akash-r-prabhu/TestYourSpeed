@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import Game from "./Game";
 import Game2 from "./Game2";
+import Feedback from "./Feedback";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     path: "/game2",
     element: <Game2 />,
   },
+  {
+    path: "/feedback",
+    element: <Feedback />,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
